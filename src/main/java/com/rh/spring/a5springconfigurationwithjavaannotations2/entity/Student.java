@@ -1,8 +1,10 @@
 package com.rh.spring.a5springconfigurationwithjavaannotations2.entity;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("singleton")
 public class Student {
     private int id;
     private String name;
@@ -33,6 +35,7 @@ public class Student {
         this.name = name;
     }
 
+    /*
     @Override
     public String toString() {
         return "Student{" +
@@ -40,4 +43,5 @@ public class Student {
                 ", name='" + name + '\'' +
                 '}';
     }
+    */
 }
